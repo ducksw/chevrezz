@@ -4,14 +4,21 @@ body {
   margin: 0;
   font-family: monospace;
   text-align: center;
+  background: rgb(50,50,50);
+  background: linear-gradient(90deg, rgba(50,50,50,1) 0%, rgba(105,104,104,1) 100%);
 }
 
 h1 {
   display: flex;
   font-family: "Press Start 2P", system-ui;
-  margin: auto;
-  font-size: 60px;
+  font-size: 55px;
   padding: 10px;
+  color: white;
+  margin-top: 20px;
+}
+
+h3 {
+  color: white;
 }
 
 a {
@@ -19,14 +26,20 @@ a {
 }
 
 main {
+  height: 100vh;
+  background: rgb(97,41,36);
+  background: radial-gradient(circle, rgba(97,41,36,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.mybox {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+	padding: 10px;
 }
 
 main a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
@@ -37,12 +50,36 @@ main a {
   margin-top: 5px;
 }
 
-.user a {
-  color: #FD2921;
+.user span {
+  color: red;
   font-size: 20px;
+}
+
+.user a:hover {
+  color: #ed5c53;
+}
+
+.link {
+  color: white;
 }
 
 
 hr {
   max-width: 700px;
+}
+
+.head {
+	display: flex;
+  gap: 10px;
+  margin-left: 10px;
+}
+
+.head a {
+  font-family: sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-top: 5px;
+}
+
+.logo {
 }
