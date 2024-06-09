@@ -1,100 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Noto+Sans+Mono:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pirata+One&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap');
-
 body {
-  margin: 0;
-  font-family: monospace;
+  font-family: 'Cascadia Mono', monospace;
   text-align: center;
-  /* background: rgb(50,50,50);
-  background: linear-gradient(90deg, rgba(50,50,50,1) 0%, rgba(105,104,104,1) 100%); */
-  background-color: #1E1E1E;
-}
-
-h1 {
-  display: flex;
-  font-family: "Press Start 2P", system-ui;
-  font-size: 55px;
-  padding: 10px;
-  color: white;
-  margin-top: 100px;
-}
-
-h2, h3, h4, h5, h6 {
-  color: white;
-}
-
-a {
-  text-decoration: none;
 }
 
 main {
-  height: 100vh;
-  background: rgb(97,41,36);
-  background: radial-gradient(circle, rgba(97,41,36,1) 0%, rgba(0,0,0,1) 100%);
-}
-
-.mybox {
   display: flex;
   flex-direction: column;
-  align-items: center;
-	padding: 10px;
+  height: 100vh;
 }
 
-main a {
-  color: white;
-  text-decoration: none;
+.head {
+  margin-top: 100px;
 }
 
 .user {
   display: flex;
-  gap: 20px;
   justify-content: center;
-  margin-top: 5px;
-}
-
-.user span {
-  color: red;
+  gap: 20px;
   font-size: 20px;
 }
 
-.user a:hover {
-  color: #ed5c53;
-}
-
-.link {
-  color: white;
-}
-
 a {
-  color: #FA8785;
+  color: red;
 }
 
+a:hover {
+  color: #ff6961;
+}
 
 hr {
-  max-width: 700px;
-}
-
-.head {
-	display: flex;
-  gap: 10px;
-  margin-left: 10px;
-}
-
-.head a {
-  font-family: sans-serif;
-  font-weight: bold;
-  text-decoration: underline;
-  margin-top: 5px;
-}
-
-
-p {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  color: white;
-  padding: 3px;
-}
-
-.copy {
-  color: white;
+  max-width: 900px;
 }
