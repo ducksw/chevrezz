@@ -15,7 +15,7 @@ main {
 }
 
 .head {
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .user {
@@ -50,11 +50,10 @@ hr {
   cursor: pointer;
 }
 
-
 @media only screen and (max-width: 800px) {
   .name {
-    max-width: 800px;
     margin: auto;
     font-size: 11px;
   }
 }
+
