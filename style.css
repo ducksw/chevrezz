@@ -61,10 +61,43 @@ hr {
   margin-top: 5px;
 }
 
+.title {
+  display: none;
+}
+
+#list-btn {
+  background-image: url('image/foil.jpg');
+  background-position: center;
+  background-size: auto;
+  max-width: 190px;
+  margin: auto;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 412px) {
+  .name {
+    display: none;
+    margin: auto;
+    font-size: 5px;
+  }
+
+  .title {
+    display: block;
+    color: white;
+    margin: 0;
+    font-size: 25px;
+    font-family: cursive;
+  }
+}
+
 @media only screen and (max-width: 800px) {
   .name {
     margin: auto;
     font-size: 11px;
   }
 }
-

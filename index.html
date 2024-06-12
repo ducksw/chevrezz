@@ -46,11 +46,15 @@
 
 </div>
 
+<div class="title">
+  <h1>CHEVREZ</h1>
+</div>
+
 <br/>
 
-<h3>Bienvendinos a la página oficial de Chevrez</h3>
-<h3>por aquí podras encontrar proyectos comunitarios</h3>
-<h3>bien chevrezzzzz</h3>
+<h2>Bienvendinos a la página oficial de Chevrez</h2>
+<h2>por aquí podras encontrar proyectos comunitarios</h2>
+<h2>bien chevrezzzzz</h2>
 
 <br/>
 
@@ -63,7 +67,9 @@
 <a href="">Ducks</a>
 <a href="">Borink</a>
 <a href="">Kayden</a>
-</div>
+</div><br/>
+
+<span>© 2024 Chevrez</span>
 
 <br/>
 
@@ -86,6 +92,7 @@
 <br/>
 
 <div class="box">
+
 
 <h2>¿Qué es Chevrez?</h2>
 <p>
@@ -155,12 +162,31 @@ solo clonando el sitio web y solo manda un pullRequest.
 <a href="https://github.com/Chevrezz/chevrezz">https://github.com/Chevrezz/chevrezz</a>
 </p>
 
+<hr/><br/><br/>
+
+<div id="list-btn">
+  <span onclick="add_name()">ADD NAME</span>
+</div>
 
 <br/>
-<span>© 2024 Chevrez</span>
+
 </div>
 </div>
 
 <script src="scripts.js"></script>
+<script>
+//let arr = JSON.parse(localStorage.getItem('name')) || [];
+let arr = []
+function add_name() {
+  let promt = prompt("SOLO NOMBRE O APODO");
+
+  if (promt) {
+    arr.push(promt);
+    localStorage.setItem("name", JSON.stringify(arr))
+    alert(`GRACIAS ${promt} PRONTO LLEGARA EL GOTA GOTA A TU CASA`);
+  } 
+
+}
+</script>
 </body>
 </html>
