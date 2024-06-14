@@ -16,7 +16,6 @@ main {
 
 
 .head {
-  margin-top: 40px;
 }
 
 .user {
@@ -37,6 +36,7 @@ a:hover {
 
 hr {
   max-width: 900px;
+  border: 1px dashed white;
 }
 
 .box {
@@ -79,25 +79,21 @@ hr {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 412px) {
-  .name {
-    display: none;
-    margin: auto;
-    font-size: 5px;
-  }
-
-  .title {
-    display: block;
-    color: white;
-    margin: 0;
-    font-size: 25px;
-    font-family: cursive;
-  }
+.nav {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  margin-left: 5px;
 }
 
 @media only screen and (max-width: 800px) {
   .name {
     margin: auto;
-    font-size: 11px;
+    font-size: 8px;
+  }
+
+  #art {
+    margin: auto;
+    font-size: 8px;
   }
 }

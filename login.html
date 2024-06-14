@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>create_count</title>
+<style>
+input {
+  margin-top: 10px;
+}
+</style>
+</head>
+<body>
+<p>
+SE QUE EL DISEÑO TE PUEDE HACER DESCONFIAR PERO<br/>
+<b><i>TIENES QUE CONFIAR, PORQUE SI NO CONFIAS NO HAY CONFIANZA.</i></b>
+</p>
+
+<b>Create Account</b><br/><br/>
+
+
+<span>username:</span>
+<input type="text" id="reg_input"> <i>(nombre de usuario)</i><br/>
+<span>password:</span>
+<input type="password" id="reg_password"> <i>(contraseña)</i><br/><br/>
+
+<button onclick="register()">create acount</button>
+<button id="clear">ELIMINAR CUENTA</button>
+
+<br/><br/><br/>
+
+PUEDE SUBIR UNA IMAGEN DE PERFIL <i>(es opcional)</i><br/>
+<input type="file" id="file" accept="image/*" onchange="up_image()"/>
+<br/>
+<img  src="" id="img"/><br/>
+<div id="res">
+</div>
+
+<script src="login.js"></script>
+</body>
+</html>

@@ -8,11 +8,16 @@
   <link rel="icon" type="image/ico" href="image/logo.jpg" />
 </head>
 <body>
-
 <main>
 
+<div class="nav">
+<h3>
+name:<b id="user"> ?=?=?=?</b>
+</h3>
+</div>
+
 <div class="head">
-<pre>
+<pre id="art">
                                      )
                             )      ((     (
                            (        ))     )
@@ -43,11 +48,9 @@
   \/_____/   \/_/\/_/   \/_____/   \/_/      \/_/ /_/   \/_____/   \/_____/ 
 </pre>
 
+<a href="login.html">crear una cuenta</a>
 
-</div>
 
-<div class="title">
-  <h1>CHEVREZ</h1>
 </div>
 
 <br/>
@@ -57,21 +60,9 @@
 <h2>bien chevrezzzzz</h2>
 
 <br/>
-
-<div class="user">
-<a href="">TheCoop3r_</a>
-<a href="">EfraX</a>
-<a href="">RozUnit</a>
+<div onclick="direct()" id="list-btn">
+  <span>GAME</span>
 </div>
-<div class="user">
-<a href="">Ducks</a>
-<a href="">Borink</a>
-<a href="">Kayden</a>
-</div><br/>
-
-<span>© 2024 Chevrez</span>
-
-<br/>
 
 <div class="mybox">
 <!--
@@ -156,37 +147,28 @@ Yo ya no vivo en Trujillo, vivo en Perú<br/>
 <hr/>
 
 <h3>El team</h3>
+<div class="user">
+<a href="">TheCoop3r_</a>
+<a href="">EfraX</a>
+<a href="">RozUnit</a>
+</div>
+<div class="user">
+<a href="">Ducks</a>
+<a href="">Borink</a>
+<a href="">Kayden</a>
+</div><br/>
 <p>
 Si quiere cambiar algo o mejorar el diseño de la pagina, lo puedes hacer tu mismo<br/>
 solo clonando el sitio web y solo manda un pullRequest.
 <a href="https://github.com/Chevrezz/chevrezz">https://github.com/Chevrezz/chevrezz</a>
 </p>
 
-<hr/><br/><br/>
+<hr/><br/>
 
-<div id="list-btn">
-  <span onclick="add_name()">ADD NAME</span>
-</div>
-
-<br/>
-
+<span>© 2024 Chevrez</span>
 </div>
 </div>
 
 <script src="scripts.js"></script>
-<script>
-//let arr = JSON.parse(localStorage.getItem('name')) || [];
-let arr = []
-function add_name() {
-  let promt = prompt("SOLO NOMBRE O APODO");
-
-  if (promt) {
-    arr.push(promt);
-    localStorage.setItem("name", JSON.stringify(arr))
-    alert(`GRACIAS ${promt} PRONTO LLEGARA EL GOTA GOTA A TU CASA`);
-  } 
-
-}
-</script>
 </body>
 </html>

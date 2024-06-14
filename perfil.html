@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+
+<style>
+
+.box {
+  background-color: #F6F6EF;
+  max-width: 800px;
+  font-family: sans-serif;
+}
+
+.mybox {
+  padding: 10px;
+}
+
+#img {
+  max-width: 100px;
+}
+</style>
+</head>
+<body>
+<div class="box">
+<div class="mybox">
+  user:  <span id="res"></span><br/>
+<img  src="" id="img"/>
+</div>
+</div>
+<script>
+
+let arr = JSON.parse(localStorage.getItem('name')) || [];
+let image_data = localStorage.getItem('image')
+
+var result = document.getElementById('res');
+
+document.getElementById("img").src = image_data
+
+result.innerHTML = arr.join(' ');
+
+
+</script>
+</body>
+</html>
