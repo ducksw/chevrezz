@@ -1,5 +1,5 @@
 let arr = JSON.parse(localStorage.getItem('name')) || [];
-let arrPass = JSON.parse(localStorage.getItem('pass')) || [];
+//let arrPass = JSON.parse(localStorage.getItem('pass')) || [];
 
 let arr_image = [];
 
@@ -13,7 +13,7 @@ function register() {
 
   if (input) {
     localStorage.setItem("name", JSON.stringify(arr))
-    localStorage.setItem("pass", JSON.stringify(arrPass))
+    //localStorage.setItem("pass", JSON.stringify(arrPass))
     result.innerHTML = arr.join('<br/>');
   }
 
