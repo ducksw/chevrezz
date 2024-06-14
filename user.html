@@ -25,11 +25,11 @@
 <body>
 <div class="box">
 <div class="mybox">
-  user:  <span id="res"></span><br/>
+user:  <span id="res"></span><br/>
 <img  src="" id="img"/>
 </div>
 </div>
-<script>
+<script src="login.js">
 
 let arr = JSON.parse(localStorage.getItem('name')) || [];
 let image_data = localStorage.getItem('image')
@@ -42,5 +42,7 @@ result.innerHTML = arr.join(' ');
 
 
 </script>
+
+<script></script>
 </body>
 </html>

@@ -48,11 +48,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
     result.innerHTML = arr.join('<br/>');
   }
 
-  /*
   if (image) {
     document.getElementById("img").src = image
   }
-  */
 });
 
 

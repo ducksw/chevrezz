@@ -12,7 +12,7 @@ function direct() {
 
 function get_data() {
   const name = document.getElementById('user');
-  user.innerHTML = `<a href="perfil.html">${arr.join(' ')}</a>`;
+  user.innerHTML = `<a href="user.html">${arr.join(' ')}</a>`;
 
   // UI
   user.style.marginLeft = '5px';
