@@ -17,28 +17,10 @@ function get_data() {
   user.innerHTML = `<span>${arr.join(' ')}</span>`;
   document.getElementById('img').src = image_data
 
-  console.log(image_data);
-
   // UI
-
   user.style.marginLeft = '5px';
   user.style.color = 'red';
 }
-
-window.onload = function() {
-  let img = document.getElementsById('img');
-
-  for (let i = 0; i < img.length; i++) {
-    img[i].addEventListener('click', function() {
-      openImage(this.src)
-    });
-  }
-};
-
-function openImage(src) {
-  window.open(src, "_self");
-}
-
 
 get_data();
 

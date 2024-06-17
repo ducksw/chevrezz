@@ -9,7 +9,7 @@ function register() {
   let result = document.getElementById('res')
 
   arr.push(input);
-  arrPass.push(password);
+  //arrPass.push(password);
 
   if (input) {
     localStorage.setItem("name", JSON.stringify(arr))
