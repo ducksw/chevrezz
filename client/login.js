@@ -17,9 +17,7 @@ function register() {
     result.innerHTML = arr.join('<br/>');
   }
 
-  setTimeout(function () {
-    window.location = "index.html";
-  }, 2000);
+  window.location = "index.html";
 }
 
 function clear_storage() {

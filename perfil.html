@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/perfil.css">
+  <title>Perfil</title>
+</head>
+<body>
+</body>
+
+<div class="title">#Chevrezz Account</div>
+
+<div class="box" id="box">
+  <div class="mybox">
+    <span class="name-perfil">Chevrez Perfil</span>
+
+    <div class="box-perfil">
+      <img src="" class="img" id="img" /> 
+      <div class="perfil-atr">
+        <div class="dat">
+          <i>Name:</i>
+          <span id="name" class="atrib">ducks</span>
+        </div>
+        <div class="dat">
+          <i>Cuenta Creada:</i>
+          <span id="name" class="atrib">ducks</span>
+        </div>
+        <div class="dat">
+          <i>Status:</i>
+          <span id="name" class="atrib">ducks</span>
+        </div>
+        <div class="dat">
+          <i>Visibility:</i>
+          <span id="name" class="atrib">public</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+function perfil() {
+  let user = localStorage.getItem("name")
+  let image = localStorage.getItem("image")
+  console.log(user, image);
+  document.getElementById('img').src = image;
+
+}
+perfil();
+
+
+
+</script>
+</html>

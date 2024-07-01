@@ -7,7 +7,7 @@ code.innerHTML = random.toUpperCase();
 let arr = JSON.parse(localStorage.getItem('name')) || [];
 
 function direct() {
-  alert("AUN NO ES FUNCIONAL");
+  alert("En desarrollo");
 }
 
 function get_data() {
