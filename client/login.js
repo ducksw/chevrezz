@@ -16,7 +16,6 @@ function register() {
     //localStorage.setItem("pass", JSON.stringify(arrPass))
     result.innerHTML = arr.join('<br/>');
   }
-
   window.location = "index.html";
 }
 
@@ -45,7 +44,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     let result = document.getElementById('res')
     result.innerHTML = arr.join('<br/>');
   }
-
   if (image) {
     document.getElementById("img").src = image
   }

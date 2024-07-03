@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,16 +9,28 @@
   <link rel="icon" type="image/ico" href="image/logo.jpg" />
 </head>
 <body>
+<!--
+  ***** LINK CORTO *****
+  https://u4.cl/chevrez
+-->
+<span id="url" style="display: none;">https://u4.cl/chevrez</span>
 <main>
 
 <div class="nav">
 <h3>
 name:<b id="user"> ?=?=?=?</b>
 </h3>
+<span id="copy"><b>url copiado</b></span>
 <img src="" class="img" id="img" />
 </div>
 
 <div class="head">
+
+<div class="URL">
+  <div id="URL-NAME" class="URL-NAME" onclick="copy_url()">
+    <span>COMPARTIR URL</span>
+  </div>
+</div>
 <pre id="art">
                                      )
                             )      ((     (
@@ -49,10 +62,8 @@ name:<b id="user"> ?=?=?=?</b>
   \/_____/   \/_/\/_/   \/_____/   \/_/      \/_/ /_/   \/_____/   \/_____/ 
 </pre>
 
-<a href="login.html">crear una cuenta</a>
-
-
 </div>
+<a href="login.html">crear una cuenta</a>
 
 <br/>
 
@@ -171,5 +182,22 @@ solo clonando el sitio web y solo manda un pullRequest.
 </div>
 
 <script src="client/scripts.js"></script>
+<script>
+function copy_url() {
+  let link_url = document.getElementById('url').innerHTML;
+  let name_link = document.getElementById('copy');
+
+  name_link.style.display = "flex"; 
+  
+
+  setTimeout(function() {
+    name_link.style.display = "none"; 
+  }, 1200)
+
+  navigator.clipboard.writeText(link_url);
+}
+
+</script>
 </body>
 </html>
+
