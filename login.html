@@ -5,41 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>create_count</title>
 <style>
-input {
-  margin-top: 10px;
+body {
+  font-family: Cursive;
 }
 
 img {
   max-width: 300px;
 }
+
+h1 {
+  text-align: center;
+}
+
+input {
+  max-width: 100%;
+  width: 300px;
+  padding: 5px;
+  font-size: 15px;
+}
+
+.box {
+  display: flex;
+  border: 1px solid black;
+  max-width: 100%;
+  width: 500px;
+  margin: auto;
+  box-shadow: 5px 5px 1px black;
+  border-radius: 5px;
+}
+
+.mybox {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 20px;
+}
+
+.acount {
+}
 </style>
 </head>
-<body>
-<p>
-SE QUE EL DISEÑO TE PUEDE HACER DESCONFIAR PERO<br/>
-<b><i>TIENES QUE CONFIAR, PORQUE SI NO CONFIAS NO HAY CONFIANZA.</i></b>
-</p>
 
-<b>Create Account</b><br/><br/>
+<h1>Crear cuenta</h1>
 
-
-<span>username:</span>
-<input type="text" id="reg_input"> <i>(nombre de usuario)</i><br/>
-<span>password:</span>
-<input type="password" id="reg_password"> <i>(contraseña)</i><br/><br/>
-
-<button onclick="register()">create acount</button>
-<button id="clear">ELIMINAR CUENTA</button>
-
-<br/><br/><br/>
-
-PUEDE SUBIR UNA IMAGEN DE PERFIL <i>(es opcional)</i><br/>
-<input type="file" id="file" accept="image/*" onchange="up_image()"/>
-<br/><br/>
-
-<img  src="" id="img"/><br/>
-
-<div id="res">
+<div class="box">
+  <div class="mybox">
+    <div class"acount">
+      <i>(nombre de usuario)</i><br/>
+      <input type="text" id="reg_input">
+    </div>
+    <div class"acount">
+      <i>(contraseña)</i><br/>
+      <input type="password" id="reg_password">
+    </div>
+    <div>
+      <button onclick="register()">Crear Cuenta</button><br/><br/>
+      Puedes subir una imagen(es opcional)
+      <input type="file" id="file" accept="image/*" onchange="up_image()"/>
+    </div>
+  </div>
+  <div style="padding: 5px;">
+    <button id="clear">ELIMINAR CUENTA</button>
+  </div>
 </div>
 
 <script src="client/login.js"></script>

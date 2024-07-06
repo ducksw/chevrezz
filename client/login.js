@@ -14,7 +14,7 @@ function register() {
   if (input) {
     localStorage.setItem("name", JSON.stringify(arr))
     //localStorage.setItem("pass", JSON.stringify(arrPass))
-    result.innerHTML = arr.join('<br/>');
+    //result.innerHTML = arr.join('<br/>');
   }
   window.location = "index.html";
 }
