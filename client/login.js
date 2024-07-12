@@ -23,7 +23,7 @@ function clear_storage() {
   localStorage.clear();
 }
 
-function up_image(){
+function up_image() { 
   var archivo = document.getElementById("file").files[0];
   var reader = new FileReader();
   if (file) {
