@@ -9,9 +9,12 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  background-color: black;
+  /*background-color: black;*/
+  background: rgb(11,18,38);
+  background: radial-gradient(circle, rgba(11,18,38,1) 0%, rgba(24,35,62,1) 0%, rgba(31,44,71,1) 0%, rgba(4,8,20,1) 100%);
   color: white;
   height: 100vh;
+  text-shadow: 0px 0px 10px black;
 }
 
 .head {
