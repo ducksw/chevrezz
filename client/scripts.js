@@ -49,11 +49,12 @@ function token(l) {
 function copiar() {
   let result = document.getElementById('codigo').innerHTML 
   navigator.clipboard.writeText(result)
+  return 0;
 }
 
 var code = token(20) 
 
-document.getElementById('codigo').innerHTML = "Copia el codigo -> " + `<b>${code}</b>`;
+document.getElementById('codigo').innerHTML = code;
 
 get_data();
 

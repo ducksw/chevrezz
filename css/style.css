@@ -319,6 +319,7 @@ textarea {
 
   .copy-btn {
     display: flex;
+    cursor: pointer;
   }
   .imagee {
     border: 5px solid black;
