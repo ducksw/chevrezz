@@ -5,11 +5,17 @@ let arr_commen = JSON.parse(localStorage.getItem('comment')) || [];
 let dt = new Date();
 var fecha = dt.getDate() + "/" + (dt.getMonth() + 1) + "/" + dt.getFullYear()
 
+
 var perfil = {
   name: arr_name,
   code: arr_cod,
   comment: arr_commen,
   date: fecha
+}
+
+function fechaa() {
+  let dt = new Date();
+  var fecha = dt.getDate() + "/" + (dt.getMonth() + 1) + "/" + dt.getFullYear()
 }
 
 function perfill() {

@@ -1,5 +1,6 @@
 let arr_get = JSON.parse(localStorage.getItem('name')) || [];
 
+
 function get_data() {
   const name = document.getElementById('user');
   let image_data = localStorage.getItem('image')
@@ -33,6 +34,7 @@ function exitt() {
   let perfil = document.getElementById('perfil');
   perfil.style.visibility = "hidden";
 }
+
 
 function token(l) {
   let save = ""; 

@@ -1,6 +1,7 @@
 let arr = JSON.parse(localStorage.getItem('name')) || [];
 let arr_code = JSON.parse(localStorage.getItem('code')) || [];
 let arr_comment = JSON.parse(localStorage.getItem('comment')) || [];
+let arr_fecha = JSON.parse(localStorage.getItem('fechaa')) || [];
 
 let arr_image = [];
 
@@ -23,7 +24,7 @@ function register() {
     localStorage.setItem("name", JSON.stringify(arr))
     localStorage.setItem("code", JSON.stringify(arr_code))
     localStorage.setItem("comment", JSON.stringify(arr_comment))
-    warning.innerHTML = "Su cuenta esta siendo cread..."
+    warning.innerHTML = "Se esta creando su cuenta, esto puede tardar un poco..."
     join.style.display = "none";
     //result.innerHTML = arr.join('<br/>');
   }
@@ -60,7 +61,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     document.getElementById("foto").src = image;
   }
 });
-
 
 /*
 document.getElementById('clear').addEventListener('click', () => {
