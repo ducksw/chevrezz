@@ -1,22 +1,32 @@
 let arr = JSON.parse(localStorage.getItem('name')) || [];
-//let arrPass = JSON.parse(localStorage.getItem('pass')) || [];
+let arr_code = JSON.parse(localStorage.getItem('code')) || [];
+let arr_comment = JSON.parse(localStorage.getItem('comment')) || [];
 
 let arr_image = [];
 
 function register() {
   let input = document.getElementById('reg_input').value;
-  let password = document.getElementById('reg_password').value;
-  let result = document.getElementById('res')
+  let codee = document.getElementById('reg_code').value;
+  let comments = document.getElementById('comment').value;
+  let warning = document.getElementById('warning');
+  let join = document.getElementById('join');
+  //let result = document.getElementById('res')
 
   arr.push(input);
-  //arrPass.push(password);
+  arr_code.push(code);
+  arr_comment.push(comments);
 
-  if (input) {
+  if (input == "" && codee == "") {
+    alert("completa los campos");
+    return;
+  } else {
     localStorage.setItem("name", JSON.stringify(arr))
-    //localStorage.setItem("pass", JSON.stringify(arrPass))
+    localStorage.setItem("code", JSON.stringify(arr_code))
+    localStorage.setItem("comment", JSON.stringify(arr_comment))
+    warning.innerHTML = "Su cuenta esta siendo cread..."
+    join.style.display = "none";
     //result.innerHTML = arr.join('<br/>');
   }
-  window.location = "index.html";
 }
 
 function clear_storage() {
@@ -33,6 +43,7 @@ function up_image() {
       arr_image.push(image_up);
       localStorage.setItem("image", image_up)
       //document.getElementById("img").src = image_up;
+      location.reload();
     }
   }
 }
@@ -41,15 +52,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
   let bd = localStorage.getItem("name")
   let image = localStorage.getItem("image")
   if (bd) {
-    let result = document.getElementById('res')
-    result.innerHTML = arr.join('<br/>');
+    //let result = document.getElementById('res')
+    //result.innerHTML = arr.join('<br/>');
   }
   if (image) {
     document.getElementById("img").src = image
+    document.getElementById("foto").src = image;
   }
 });
 
 
+/*
 document.getElementById('clear').addEventListener('click', () => {
   let warning = prompt("ESTA SEGURO ELIMINAR TU CUENTA? S(SI) y N(NO)")
 
@@ -58,3 +71,4 @@ document.getElementById('clear').addEventListener('click', () => {
     location.reload()
   } 
 });
+*/

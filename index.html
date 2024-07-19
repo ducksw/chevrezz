@@ -10,13 +10,14 @@
 <body>
 <!--
   @autor Chevrez
+  @date May 31, 2024
 -->
 <span id="url" style="display: none;">https://chevrezz.github.io/chevrezz/</span>
 <main>
 
 <div class="nav">
 <h3>
-name:<b id="user"> ?=?=?=?</b>
+  welcome:<b id="user"> ?=?=?=?</b><br/>
 </h3>
 <span id="copy"><b>url copiado</b></span>
 <img src="" class="img" id="img" />
@@ -29,6 +30,7 @@ name:<b id="user"> ?=?=?=?</b>
     <span>COPY URL</span>
   </div>
 </div>
+
 <pre id="art">
                                      )
                             )      ((     (
@@ -62,9 +64,10 @@ name:<b id="user"> ?=?=?=?</b>
 
 </div>
 <!--<a href="">Tienda</a> |-->
+<br/>
+<!-- <a href="">Board</a> | -->
 <a href="https://ducksw.github.io/alpacaland/" target="_blank">Alpacaland</a> |
-<a href="login">create acount</a>
-
+<span id="create" onclick="modal()">create acount</span>
 <br/>
 
 <h2>Bienvendinos a la página oficial de Chevrez</h2>
@@ -83,7 +86,78 @@ name:<b id="user"> ?=?=?=?</b>
 <a href="">Kayden</a>
 </div>
 
+</div>
 
+
+<!-- 
+  para poder subir imagen
+  <input type="file" id="file" accept="image/*" onchange="up_image()"/> 
+-->
+
+<!-- LOGIN -->
+<div class="box-login" id="box-login">
+  <form class="log" action="https://formsubmit.co/28459ed3f373196a418ceef0101123ef" method="POST">
+    <div class="log-form" id="log">
+      <div class="btn-exit">
+        <span id="exit" onclick="exit()">X</span>
+      </div>
+      <h2>crear cuenta</h2>
+      <div>
+        <span>name: </span>
+        <input type="text" id="reg_input" name="name" placeholder="nombre o apodo">
+      </div>
+      <div>
+        <span>code: </span>
+        <input type="text" name="code" placeholder="copia el codigo de abajo" id="code">
+      </div>
+      <div class="comment">
+        <span>comment: </span>
+        <textarea name="comment" id="comment" placeholder="un comentario random"></textarea><i>(opcional)</i>
+      </div>
+      <div class="btns">
+        <button id="join" onclick="register()">Join</button>
+        <button class="copy-btn" id="reg_code">Copy code</button>
+      </div>
+      <div class="code-box">
+        <br/><br/>
+        <span id="codigo"></span>
+      </div>
+      <br/><br/>
+      <span id="warning"></span>
+      <input type="hidden" name="_next" value="http://localhost:3000/">
+      <input type="hidden" name="_captcha" value="false">
+    </div>
+  </form>
+</div>
+
+<!-- MI PERFIL -->
+<div class="perfil" id="perfil">
+  <div class="perfil-pers">
+      <div class="btn-exit">
+        <span id="exit" onclick="exitt()">X</span>
+      </div>
+    <div class="personal">
+      <div class="cont-perf">
+        <h1>Mi perfil</h1>
+        <div class="data">
+          <span>user: </span><span id="c_user">test</span>
+        </div>
+        <div class="data">
+          <span>code: </span><span id="c_code">test</span>
+        </div>
+        <div class="data">
+          <span>create: </span><span id="c_create">test</span>
+        </div>
+        <div class="data">
+          <span>comment: </span><span id="c_comment">testtttttt</span>
+        </div>
+        <input class="subimage" type="file" id="file" accept="image/*" onchange="up_image()"/> 
+      </div>
+      <div class="perfil-image">
+        <img src="" class="imagee" id="foto"/>
+      </div>
+    </div>
+  </div>
 </div>
 
 </main>
@@ -167,6 +241,8 @@ solo clonando el sitio web y solo manda un pullRequest.
 </div>
 
 <script src="client/scripts.js"></script>
+<script src="client/perfil.js"></script>
+<script src="client/login.js"></script>
 <script>
 function copy_url() {
   let link_url = document.getElementById('url').innerHTML;
@@ -183,6 +259,6 @@ function copy_url() {
 }
 
 </script>
+
 </body>
 </html>
-
