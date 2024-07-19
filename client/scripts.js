@@ -46,6 +46,11 @@ function token(l) {
   return save;
 }
 
+function copiar() {
+  let result = document.getElementById('codigo').innerHTML 
+  navigator.clipboard.writeText(result)
+}
+
 var code = token(20) 
 
 document.getElementById('codigo').innerHTML = "Copia el codigo -> " + `<b>${code}</b>`;
