@@ -3,266 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chevrez</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" type="image/ico" href="image/logo.jpg" />
+  <title>Chevrezz</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<!--
-  @autor Chevrez
-  @date May 31, 2024
--->
-<span id="url" style="display: none;">https://chevrezz.github.io/chevrezz/</span>
 <main>
-
-<div class="nav">
-<h3>
-  welcome:<b id="user"> ?=?=?=?</b><br/>
-</h3>
-<span id="copy"><b>url copiado</b></span>
-<img src="" class="img" id="img" />
-</div>
-
-<div class="head">
-
-<div class="URL">
-  <div id="URL-NAME" class="URL-NAME" onclick="copy_url()">
-    <span>COPY URL</span>
-  </div>
-</div>
-
-<pre id="art">
-                                     )
-                            )      ((     (
-                           (        ))     )
-                    )       )      //     (
-               _   (        __    (     ~->>
-        ,-----' |__,_~~___<'__`)-~__--__-~->> <
-        | //  : | -__   ~__ o)____)),__ - '> >-  >
-        | //  : |- \_ \ -\_\ -\ \ \ ~\_  \ ->> - ,  >>
-        | //  : |_~_\ -\__\ \~'\ \ \, \__ . -<-  >>
-        `-----._| `  -__`-- - ~~ -- ` --~> >
-         _/___\_    //)_`//  | ||]
-   _____[_______]_[~~-_ (.L_/  ||
-  [____________________]' `\_,/'/
-    ||| /          |||  ,___,'./
-    ||| \          |||,'______|
-    ||| /          /|| I==||
-    ||| \       __/_||  __||__
------||-/------`-._/||-o--o---o---
-  ~~~~~'
-</pre>
-
-<div class="name">
-<pre>
- ______     __  __     ______     __   __   ______     ______     ______    
-/\  ___\   /\ \_\ \   /\  ___\   /\ \ / /  /\  == \   /\  ___\   /\___  \   
-\ \ \____  \ \  __ \  \ \  __\   \ \ \'/   \ \  __<   \ \  __\   \/_/  /__  
- \ \_____\  \ \_\ \_\  \ \_____\  \ \__|    \ \_\ \_\  \ \_____\   /\_____\ 
-  \/_____/   \/_/\/_/   \/_____/   \/_/      \/_/ /_/   \/_____/   \/_____/ 
-</pre>
-
-</div>
-<!--<a href="">Tienda</a> |-->
-<br/>
-<!-- <a href="">Board</a> | -->
-<a href="https://ducksw.github.io/alpacaland/" target="_blank">Alpacaland</a> |
-<span id="create" onclick="modal()">create acount</span>
-<br/>
-
-<h2>Bienvendinos a la página oficial de Chevrez</h2>
-<h2>solo nos divertimos y recuerda</h2>
-<h2>!Ella no te ama¡</h2>
-
-<br/>
-<div class="user">
-<a href="">TheCoop3r_</a>
-<a href="">EfraX</a>
-<a href="">RozUnit</a>
-</div>
-<div class="user">
-<a href="">Ducks</a>
-<a href="">Borink</a>
-<a href="">Kayden</a>
-</div>
-
-</div>
-
-
-<!-- 
-  para poder subir imagen
-  <input type="file" id="file" accept="image/*" onchange="up_image()"/> 
--->
-
-<!-- LOGIN -->
-<div class="box-login" id="box-login">
-  <form class="log" action="https://formsubmit.com/28459ed3f373196a418ceef0101123ef " method="POST">
-    <div class="log-form" id="log">
-      <div class="btn-exit">
-        <span id="exit" onclick="exit()">X</span>
-      </div>
-      <h2>crear cuenta</h2>
-      <div>
-        <span>name: </span>
-        <input type="text" id="reg_input" name="name" placeholder="nombre o apodo">
-      </div>
-      <div>
-        <span>code: </span>
-        <input type="text" name="code" placeholder="copia el codigo de abajo" id="code">
-      </div>
-      <div class="comment">
-        <span>comment: </span>
-        <textarea name="comment" id="comment" placeholder="un comentario random"></textarea><i>(opcional)</i>
-      </div>
-      <div style="display: flex; align-items: center; margin: auto; gap: 4px;">
-        <span>creation: </span>
-        <div id="create" name="creation" style="max-width: 100%; width: 220px; border: 1px solid black; padding: 3px; border-radius: 3px;">ga</div>
-      </div>
-      <div class="btns">
-        <button id="join" onclick="register()">Join</button>
-        <span class="copy-btn" id="reg_code" onclick="copiar()">Copy code</span>
-      </div>
-      <div class="code-box">
-        <br/><br/>
-        <span>Copia el codigo -></span><span id="codigo"></span>
-      </div>
-      <br/><br/>
-      <span id="warning"></span>
-      <input type="hidden" name="_next" value="https://chevrezz.github.io/chevrezz/">
-      <input type="hidden" name="_captcha" value="false">
-    </div>
-  </form>
-</div>
-
-<!-- MI PERFIL -->
-<div class="perfil" id="perfil">
-  <div class="perfil-pers">
-      <div class="btn-exit">
-        <span id="exit" onclick="exitt()">X</span>
-      </div>
-    <div class="personal">
-      <div class="cont-perf">
-        <h1>Mi perfil</h1>
-        <div class="data">
-          <span>user: </span><span id="c_user">test</span>
-        </div>
-        <div class="data">
-          <span>code: </span><span id="c_code">test</span>
-        </div>
-        <div class="data">
-          <span>create: </span><span id="c_create">test</span>
-        </div>
-        <div class="data">
-          <span>comment: </span><span id="c_comment">testtttttt</span>
-        </div>
-        <input class="subimage" type="file" id="file" accept="image/*" onchange="up_image()"/> 
-      </div>
-      <div class="perfil-image">
-        <img src="" class="imagee" id="foto"/>
-      </div>
-    </div>
-  </div>
-</div>
-
-</main>
-
-<br/>
-
 <div class="box">
+<center>
+<pre class="name">
+_________ .__                                        
+\_   ___ \|  |__   _______  _________   ____ ________
+/    \  \/|  |  \_/ __ \  \/ /\_  __ \_/ __ \\___   /
+\     \___|   Y  \  ___/\   /  |  | \/\  ___/ /    / 
+ \______  /___|  /\___  >\_/   |__|    \___  >_____ \
+        \/     \/     \/                   \/      \/
+</pre>
 
-<h2>¿Qué es Chevrez?</h2>
-<p>
-Chevrez es un grupo de amigos que fue creado en el 2018 el grupo se origino<br/>
-por intereses comunes, como los juegos, memes<br/>
-a lo largo de los años el grupo se a mantenido activo, convirtiendose<br/>
-en algo más para nuestra vida.
-</p>
-
-<hr/>
-
-<h3>Proyectos comunitarios</h3>
-
-<h4>Visual</h4>
-<a href="proyect/kfc.html">la gran funada del KFC 2024 (es fake)</a>
-<a href="">example</a>
-<a href="">example</a>
-<a href="">example</a>
-
-<h4>Game</h4>
-<a href="https://ducksw.github.io/jorgeVerso/">ducksw.github.io/jorgeVerso(Fotos random de JorgeLuna)</a>
-<a href="https://ducksw.github.io/DUMBRL/">https://ducksw.github.io/DUMBRL/</a>
-<a href="">example</a>
-<a href="">example</a>
-
-<br/><hr/>
-
-<h3>Joder que pendejada</h3>
-<p>
-Algo mitico se podria decir lo más alto que se puede tener, es algo,<br/>
-los pensamientos se piensa, cada persona piensa con la mente<br/>
-aveces pienso pensando pensamientos.<br/><br/>
-
-Una cosa es una cosa<br/>
-otra cosa es otra cosa<br/>
-son cosas muy diferentes.<br/><br/>
-
-Mirar una pared es como mirar una ventana, pero en vez<br/>
-de una ventana es una pared.<br/><br/>
-
-La única manera de aplaudir es teniendo dos manos.<br/><br/>
-
-Es muy dificil decir adiós cuando no te estas yendo.
-
-</p>
-
-<hr/>
-<h3>Joder que sabio</h3>
-<p>
+<h3>Bienvendinos a la página oficial de <span class="red">Chevrez</span></h3>
+<h3>solo nos divertimos y recuerda<br/>
+!Ella no te ama¡
+</h3>
+<div class="frases">
 Un sabio dijo una vez<br/>
-<b>"una vez"</b><br/><br/>
-
+"una vez"<br/><br/>
 No fue plagio, fue copia<br/>
-<b>"Cesar Acuña"</b><br/><br/>
-
+"Cesar Acuña"<br/><br/>
 Yo ya no vivo en Trujillo, vivo en Perú<br/>
-<b>"Cesar Acuña"</b>
-
-</p>
-
-<hr/>
-
-<h3>El team</h3>
-<p>
-Si quieres cambiar algo o mejorar el diseño de la pagina, lo puedes hacer tu mismo<br/>
-solo clonando el sitio web y solo manda un pullRequest.
-<a href="https://github.com/Chevrezz/chevrezz">https://github.com/Chevrezz/chevrezz</a>
-</p>
-
-<hr/><br/>
-
-<span>© 2024 Chevrez</span>
-</div>
+"Cesar Acuña<br/><br/>
+¿El pollo esta vivo o muerto?<br/><br/>
 </div>
 
-<script src="client/scripts.js"></script>
-<script src="client/perfil.js"></script>
-<script src="client/login.js"></script>
-<script>
-function copy_url() {
-  let link_url = document.getElementById('url').innerHTML;
-  let name_link = document.getElementById('copy');
+<div class="integrantes">
+<a href="https://www.instagram.com/jadd.of/" target="_blank">TheCoop3r_</a>
+<a href="https://www.instagram.com/el_efraxx/" target="_blank">EfraX</a>
+<a href="https://www.instagram.com/knop_roz/" target="_blank">RozUnit</a>
+<a href="">El_Padrino</a><br/>
+</div>
+<div class="integrantes">
+<a href="https://www.instagram.com/fqbrii.4/" target="_blank">Ducks</a>
+<a href="https://www.instagram.com/borink_zzz/" target="_blank">Borink</a>
+<a href="https://www.instagram.com/britoparicahua/" target="_blank">Kayden</a>
+</div><br/>
 
-  name_link.style.display = "flex"; 
-  
+Homenaje a nuestro dios superior<br/><br/>
+<img class="image" src="../image/brito.jpg"><br/><br/>
 
-  setTimeout(function() {
-    name_link.style.display = "none"; 
-  }, 1200)
-
-  navigator.clipboard.writeText(link_url);
-}
-
-</script>
+<footer>Todos los derechos estan reservados,<br/>
+alguna queja o funa, funenlo a <span class="red" style="font-size: 25px;">borink</span></footer>
+</center>
+</div>
+</main>
 
 </body>
 </html>
