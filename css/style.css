@@ -75,7 +75,7 @@ footer {
 @media only screen and (max-width: 800px) {
   .name {
     font-weight: bold;
-    font-size: 15px;
+    font-size: 13px;
     color: white;
     text-shadow: 0px 0px 10px black;
   }
