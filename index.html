@@ -20,13 +20,13 @@ _________ .__
         \/     \/     \/                   \/      \/
 </pre>
 
-<h3>Bienvendinos a la página oficial de <span class="red">Chevrez</span></h3>
+<h2>Bienvendinos a la página oficial de <span class="red">Chevrez</span></h2>
 <h3>solo nos divertimos y recuerda<br/>
 !Ella no te ama¡
 </h3>
 <div class="frases">
-Un sabio dijo una vez<br/>
-"una vez"<br/><br/>
+Alguien aburrido tratando de divertirse...<br/>
+"borink"<br/><br/>
 No fue plagio, fue copia<br/>
 "Cesar Acuña"<br/><br/>
 Yo ya no vivo en Trujillo, vivo en Perú<br/>
@@ -46,7 +46,7 @@ Yo ya no vivo en Trujillo, vivo en Perú<br/>
 <a href="https://www.instagram.com/britoparicahua/" target="_blank">Kayden</a>
 </div><br/>
 
-Homenaje a nuestro dios superior<br/><br/>
+<h3>Homenaje a nuestro dios superior</h3>
 <img class="image" src="image/brito.jpg"><br/><br/>
 
 <footer>Todos los derechos estan reservados,<br/>
@@ -55,5 +55,20 @@ alguna queja o funa, funenlo a <span class="red" style="font-size: 25px;">borink
 </div>
 </main>
 
+<script>
+window.onload = function() {
+let img = document.getElementsByClassName('image');
+
+  for (let i = 0; i < img.length; i++) {
+    img[i].addEventListener('click', function() {
+      openImage(this.src)
+    });
+  }
+};
+
+function openImage(src) {
+  window.open(src, "_self");
+}
+</script>
 </body>
 </html>
