@@ -17,6 +17,10 @@ body {
   background: linear-gradient(90deg, rgba(41,41,41,1) 0%, rgba(111,111,111,1) 100%);
 }
 
+.image-logo img {
+  max-width: 100%;
+}
+
 h3 {
   font-size: 1.25rem;
 }
@@ -51,7 +55,7 @@ main {
 }
 
 .name {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   text-shadow: 0px 0px 10px black;
 }
@@ -65,9 +69,22 @@ main {
   cursor: pointer;
 }
 
-footer {
-  font-family: monospace;
+.fott {
+  font-family: 'Monaco';
+  font-size: 13px;
 }
+
+.nav {
+  display: flex;
+  font-family: 'Monaco';
+  font-size: 13px;
+  gap: 5px;
+}
+
+.nav a {
+  color: rgb(255, 45, 45);
+}
+
 
 @media only screen and (max-width: 800px) {
   .name {
