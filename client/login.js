@@ -1,74 +1,78 @@
-let arr = JSON.parse(localStorage.getItem('name')) || [];
-let arr_code = JSON.parse(localStorage.getItem('code')) || [];
-let arr_comment = JSON.parse(localStorage.getItem('comment')) || [];
-let arr_fecha = JSON.parse(localStorage.getItem('fechaa')) || [];
+//document.getElementById('join').setAttribute('onclick', 'joinn()')
 
-let arr_image = [];
+function codee(c) {
+  let save = ""; 
+  let token = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+  let tokenLength = token.length;
 
-function register() {
-  let input = document.getElementById('reg_input').value;
-  let codee = document.getElementById('reg_code').value;
-  let comments = document.getElementById('comment').value;
-  let warning = document.getElementById('warning');
-  let join = document.getElementById('join');
-  //let result = document.getElementById('res')
+  for (let i = 0; i < c; i++) {
+    save += token.charAt(Math.random() * tokenLength);
+  }
 
-  arr.push(input);
-  arr_code.push(code);
-  arr_comment.push(comments);
+  return save;
+}
 
-  if (input == "" && codee == "") {
-    alert("completa los campos");
-    return;
+function id() {
+  let cod = codee(10)
+  let ID = document.getElementById('code').value = cod;
+  const f = new Date()
+  let create = document.getElementById('create');
+  let fecha = f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear();
+  create.innerHTML = fecha
+  localStorage.setItem('cod', ID)
+  localStorage.setItem('creation', fecha);
+}
+id()
+
+function loginn() {
+  let input = document.getElementById('reg_input').value 
+  let comment = document.getElementById('comment').value 
+  let create = document.getElementById('create').value 
+  let cheems = document.getElementById('cheems');
+
+  if (input == "") {
+    alert("necesitas un nombre");
   } else {
-    localStorage.setItem("name", JSON.stringify(arr))
-    localStorage.setItem("code", JSON.stringify(arr_code))
-    localStorage.setItem("comment", JSON.stringify(arr_comment))
-    warning.innerHTML = "Se esta creando su cuenta, esto puede tardar un poco..."
-    join.style.display = "none";
-    //result.innerHTML = arr.join('<br/>');
+    localStorage.setItem('name', input)
+    localStorage.setItem('coment', comment)
+    cheems.style.display = "flex";
+    setTimeout(function() {
+      window.open("index", "_self")
+    },3000)
   }
 }
 
-function clear_storage() {
-  localStorage.clear();
+function exit() {
+  let ex = document.getElementById('box-login');
+  ex.style.visibility = "hidden"
 }
 
-function up_image() { 
+function view() {
+  let ex = document.getElementById('box-login');
+  ex.style.visibility = "visible"
+}
+
+window.onload = function() {
+  let get_namee = localStorage.getItem('name');
+  let namee = document.getElementById('namee');
+  if (get_namee) {
+    namee.innerHTML = `<a href="">${get_namee}</a>`
+  }
+}
+
+/*
+function up_image() {
   var archivo = document.getElementById("file").files[0];
   var reader = new FileReader();
   if (file) {
     reader.readAsDataURL(archivo );
     reader.onloadend = function () {
       let image_up = reader.result;
-      arr_image.push(image_up);
+      //arr_image.push(image_up);
       localStorage.setItem("image", image_up)
-      //document.getElementById("img").src = image_up;
-      location.reload();
+      document.getElementById("foto").src = image_up;
     }
   }
 }
-
-document.addEventListener('DOMContentLoaded', (event) => {
-  let bd = localStorage.getItem("name")
-  let image = localStorage.getItem("image")
-  if (bd) {
-    //let result = document.getElementById('res')
-    //result.innerHTML = arr.join('<br/>');
-  }
-  if (image) {
-    document.getElementById("img").src = image
-    document.getElementById("foto").src = image;
-  }
-});
-
-/*
-document.getElementById('clear').addEventListener('click', () => {
-  let warning = prompt("ESTA SEGURO ELIMINAR TU CUENTA? S(SI) y N(NO)")
-
-  if (warning.toLocaleUpperCase() == "SI" || warning.toLocaleUpperCase() == "S") {
-    clear_storage()
-    location.reload()
-  } 
-});
 */
+

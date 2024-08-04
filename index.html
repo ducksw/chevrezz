@@ -8,72 +8,99 @@
   <link rel="icon" type="image/ico" href="image/logo.jpg" />
 </head>
 <body>
-<main>
 <div class="box">
-<center>
+<div class="mybox">
 
-<div class="image-logo">
-<img src="image/logo1.png" />
+<div class="nav">
+<a href="">home</a> |
+<a href="machin">homenaje a machin</a> |
+<span class="join" onclick="view()">join chevrez</span> 
+</div><br/>
+<img class="dios" src="image/brito.jpg" />
+<pre>
+ ____     __                                              
+/\  _`\  /\ \                                             
+\ \ \/\_\\ \ \___      __   __  __   _ __    __   ____    
+ \ \ \/_/_\ \  _ `\  /'__`\/\ \/\ \ /\`'__\/'__`\/\_ ,`\  
+  \ \ \L\ \\ \ \ \ \/\  __/\ \ \_/ |\ \ \//\  __/\/_/  /_ 
+   \ \____/ \ \_\ \_\ \____\\ \___/  \ \_\\ \____\ /\____\
+    \/___/   \/_/\/_/\/____/ \/__/    \/_/ \/____/ \/____/
+
+</pre>
+<hr>
+
+<p>
+Chevrez es un grupo de amigos que fue creado en el 2018 el grupo se origino<br/>
+por intereses comunes, como los juegos, memes<br/>
+a lo largo de los años el grupo se a mantenido activo, convirtiendose<br/>
+en algo más para nuestra vida.
+</p>
+
+<b>perfil: <span id="namee"></span></b>
+<br/>
+
+<div  id="perfil" class="perfil">
 </div>
-<!-- <pre class="name">
-_________ .__                                        
-\_   ___ \|  |__   _______  _________   ____ ________
-/    \  \/|  |  \_/ __ \  \/ /\_  __ \_/ __ \\___   /
-\     \___|   Y  \  ___/\   /  |  | \/\  ___/ /    / 
- \______  /___|  /\___  >\_/   |__|    \___  >_____ \
-        \/     \/     \/                   \/      \/
-</pre> -->
 
-<h2>Bienvendinos a la página oficial de <span class="red">Chevrez</span></h2>
-<h3>solo nos divertimos y recuerda<br/>
-!Ella no te ama¡
-</h3>
-<div class="frases">
-Alguien aburrido tratando de divertirse...<br/>
-"borink"<br/><br/>
-No fue plagio, fue copia<br/>
-"Cesar Acuña"<br/><br/>
-¿El pollo esta vivo o muerto?<br/><br/>
-</div>
+<br/>
+<b>Integrantes</b>
 
-<div class="integrantes">
-<a href="https://www.instagram.com/jadd.of/" target="_blank">TheCoop3r_</a>
-<a href="https://www.instagram.com/el_efraxx/" target="_blank">EfraX</a>
-<a href="https://www.instagram.com/knop_roz/" target="_blank">RozUnit</a>
+<br/>
+
+<div class="integrantes"><br/>
+<a href="https://www.instagram.com/jadd.of/" target="_blank">TheCoop3r_</a> |
+<a href="https://www.instagram.com/el_efraxx/" target="_blank">EfraX</a> |
+<a href="https://www.instagram.com/knop_roz/" target="_blank">RozUnit</a> |
 <a href="">El_Padrino</a><br/>
 </div>
 <div class="integrantes">
-<a href="https://www.instagram.com/fqbrii.4/" target="_blank">Ducks</a>
-<a href="https://www.instagram.com/borink_zzz/" target="_blank">Borink</a>
+<a href="https://www.instagram.com/fqbrii.4/" target="_blank">Ducks</a> |
+<a href="https://www.instagram.com/borink_zzz/" target="_blank">Borink</a> |
 <a href="https://www.instagram.com/britoparicahua/" target="_blank">Kayden</a>
-</div><br/>
-
-<h3>Homenaje a nuestro dios superior</h3>
-<img class="image" src="image/brito.jpg"><br/><br/>
-
-<div class="fott">
-Todos los derechos estan reservados,<br/>
-alguna queja o funa, funenlo a <b class="red">borink</b>
 </div>
-</center>
+
+<img class="troll" src="image/troll.png" />
+
+
+<!-- LOGIN -->
+<div class="box-login" id="box-login">
+  <div class="log">
+    <div class="log-form" id="log">
+      <div class="btn-exit">
+        <span id="exit" onclick="exit()">X</span>
+      </div>
+      <h2>join chevrez</h2>
+      <div class="inp">
+        <span>nickname: </span>
+        <input type="text" id="reg_input" placeholder="nombre o apodo">
+      </div>
+      <div class="inp">
+        <span>code: </span>
+        <input type="text"  placeholder="copia el codigo de abajo" id="code" readonly onmousedown="return true;">
+      </div>
+      <div class="comment">
+        <span>comment: </span>
+        <textarea id="comment" placeholder="un comentario random"></textarea><i>(opcional)</i>
+      </div>
+      <div style="display: flex; align-items: center; margin: auto; gap: 4px;" class="creation">
+        <span>creation: </span>
+        <div id="create" style="max-width: 100%; width: 220px; border: 1px solid black; padding: 3px; border-radius: 3px;">ga</div>
+      </div>
+      <div class="btns">
+        <button onclick="loginn()">Join</button>
+        <span class="copy-btn" id="reg_code" onclick="copiar()">Copy code</span>
+      </div>
+      <div class="cheems" >
+        <img id="cheems" src="image/cheems-carga.gif" />
+      </div>
+    </div>
+  </div>
+</div>
 
 </div>
-</main>
+</div>
 
-<script>
-window.onload = function() {
-let img = document.getElementsByClassName('image');
+<script src="client/login.js"></script>
 
-  for (let i = 0; i < img.length; i++) {
-    img[i].addEventListener('click', function() {
-      openImage(this.src)
-    });
-  }
-};
-
-function openImage(src) {
-  window.open(src, "_self");
-}
-</script>
 </body>
 </html>
