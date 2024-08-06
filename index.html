@@ -6,101 +6,96 @@
   <title>Chevrezz</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/ico" href="image/logo.jpg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </head>
 <body>
-<div class="box">
 <div class="mybox">
-
-<div class="nav">
-<a href="">home</a> |
-<a href="machin">homenaje a machin</a> |
-<span class="join" onclick="view()">join chevrez</span> 
-</div><br/>
-<img class="dios" src="image/brito.jpg" />
-<pre>
- ____     __                                              
-/\  _`\  /\ \                                             
-\ \ \/\_\\ \ \___      __   __  __   _ __    __   ____    
- \ \ \/_/_\ \  _ `\  /'__`\/\ \/\ \ /\`'__\/'__`\/\_ ,`\  
-  \ \ \L\ \\ \ \ \ \/\  __/\ \ \_/ |\ \ \//\  __/\/_/  /_ 
-   \ \____/ \ \_\ \_\ \____\\ \___/  \ \_\\ \____\ /\____\
-    \/___/   \/_/\/_/\/____/ \/__/    \/_/ \/____/ \/____/
-
-</pre>
-<hr>
-
-<p>
-Chevrez es un grupo de amigos que fue creado en el 2018 el grupo se origino<br/>
-por intereses comunes, como los juegos, memes<br/>
-a lo largo de los años el grupo se a mantenido activo, convirtiendose<br/>
-en algo más para nuestra vida.
-</p>
-
-<b>perfil: <span id="namee"></span></b>
-<br/>
-
-<div  id="perfil" class="perfil">
-</div>
-
-<br/>
-<b>Integrantes</b>
-
-<br/>
-
-<div class="integrantes"><br/>
-<a href="https://www.instagram.com/jadd.of/" target="_blank">TheCoop3r_</a> |
-<a href="https://www.instagram.com/el_efraxx/" target="_blank">EfraX</a> |
-<a href="https://www.instagram.com/knop_roz/" target="_blank">RozUnit</a> |
-<a href="">El_Padrino</a><br/>
-</div>
-<div class="integrantes">
-<a href="https://www.instagram.com/fqbrii.4/" target="_blank">Ducks</a> |
-<a href="https://www.instagram.com/borink_zzz/" target="_blank">Borink</a> |
-<a href="https://www.instagram.com/britoparicahua/" target="_blank">Kayden</a>
-</div>
-
-<img class="troll" src="image/troll.png" />
-
-
-<!-- LOGIN -->
-<div class="box-login" id="box-login">
-  <div class="log">
-    <div class="log-form" id="log">
-      <div class="btn-exit">
-        <span id="exit" onclick="exit()">X</span>
-      </div>
-      <h2>join chevrez</h2>
-      <div class="inp">
-        <span>nickname: </span>
-        <input type="text" id="reg_input" placeholder="nombre o apodo">
-      </div>
-      <div class="inp">
-        <span>code: </span>
-        <input type="text"  placeholder="copia el codigo de abajo" id="code" readonly onmousedown="return true;">
-      </div>
-      <div class="comment">
-        <span>comment: </span>
-        <textarea id="comment" placeholder="un comentario random"></textarea><i>(opcional)</i>
-      </div>
-      <div style="display: flex; align-items: center; margin: auto; gap: 4px;" class="creation">
-        <span>creation: </span>
-        <div id="create" style="max-width: 100%; width: 220px; border: 1px solid black; padding: 3px; border-radius: 3px;">ga</div>
-      </div>
-      <div class="btns">
-        <button onclick="loginn()">Join</button>
-        <span class="copy-btn" id="reg_code" onclick="copiar()">Copy code</span>
-      </div>
-      <div class="cheems" >
-        <img id="cheems" src="image/cheems-carga.gif" />
+  <div class="box">
+    <div class="perfil">
+      <h1>Chevrez</h1>
+      <div class="login">
+        <!-- <a href="">Login chevrez</a> -->
       </div>
     </div>
+    <div class="nav">
+      <a href="" class="home">Home</a>
+      <a href="">Integrantes</a>
+    </div>
+
+    <div class="main">
+      <div class="cont1">
+        <h2>¿Que es chevrez?</h2>
+        <span class="desp">Chevrez es un grupo de amigos que fue creado en el 2018 el grupo se origino por intereses comunes, como los juegos, memes a lo largo de los años el grupo se a mantenido activo, convirtiendose en algo más para nuestra vida.</span>
+        <span class="desp"></span>
+        <img src="image/troll.png">
+      </div>
+      <div class="cont2">
+        <img src="image/logo.jpg" class="image">
+      </div>
+    </div>
+
+    <div class="dios">
+      <div class="brito-image">
+        <img src="image/chad.jpg" class="image">
+      </div>
+      <div class="brito">
+        <h2>Nuestro dios ⚡</h2>
+        <span class="desp">El nacimiento de un dios, un dia normal el 20 de enero del 2005, se propuso a crear todo lo existente y controlor todo lo que estaba en su paso, si eras un pecador ibas hacer exterminado.</span>
+        <span class="desp">Y se proclamó con el nombre "DIOS BRITO".</span>
+      </div>
+    </div>
+
+    <div class="rey">
+      <div class="machin">
+        <h2>Machin 😇🙏</h2>
+        <span class="desp">Un recuerdo conmemorativo a nuestro rey machin.</span>
+        <span class="desp">Dedicado a machin por tantas alegrias que nos dio sus ocurrencias dejaron una huella imborrable en nuestro corazones.</span>
+        <span class="desp" style="color: black; text-shadow: 0px 0px 10px gold;">Machin es un chevrez más | Machin es familia | Machin es good | Machin nuestro dios</span>
+      </div>
+      <div class="machin-image">
+        <img src="image/machin2.png" class="image">
+      </div>
+    </div>
+
+    <div class="theforest">
+      <div class="pr">
+        <iframe width="1600" height="823" src="https://www.youtube.com/embed/qfhGsR4XToM?list=PLDyrGJ_-rnakapH39dxK9Ck-83nuEp-4t" title="Mechandonos una niña que se le mete el chamuco y reviviendo a timmy para que le de parkinson" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="pr2">
+        <h2>The Forest 🧟</h2>
+        <span class="desp">Mechandonos una niña que se le mete el chamuco y reviviendo a timmy para que le de parkinson.</span>
+        <span class="desp">Un día casual jugando theforestacion <i>hazi le decimos al juego</i>.</span>
+        <span class="desp">Timmy al final se convierte en un chamuco.</span>
+        <span class="desp"><b>Gracias Timmy 😎👍</b></span>
+      </div>
+    </div>
+
   </div>
 </div>
 
-</div>
+<!-- Modal HTML embedded directly into document -->
+<div id="ex1" class="modal">
+  <h2 style="color: black">Homenajes</h2><br/>
+  <a href="machin.html">Homenaje a machin</a>
 </div>
 
-<script src="client/login.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<script>
+window.onload = function() {
+  let img = document.getElementsByClassName('image');
 
+  for (let i = 0; i < img.length; i++) {
+    img[i].addEventListener('click', function() {
+      openImage(this.src)
+    });
+  }
+};
+
+function openImage(image) {
+  window.open(image, "_self");
+}
+
+</script>
 </body>
 </html>

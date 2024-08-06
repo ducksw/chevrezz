@@ -27,7 +27,6 @@ id()
 function loginn() {
   let input = document.getElementById('reg_input').value 
   let comment = document.getElementById('comment').value 
-  let create = document.getElementById('create').value 
   let cheems = document.getElementById('cheems');
 
   if (input == "") {
